@@ -57,4 +57,4 @@ def synthesize():
         return {"error": str(e)}, 500
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5002, debug=True)
+    app.run(host='0.0.0.0', port=5002, ssl_context=('cert.pem', 'key.pem'))
